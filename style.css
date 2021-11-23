@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2? family= Outfit:wght@200 & family= Playfair+Display:wght@400;600 & family= Roboto & display=swap');
+body{
+	font-family : 'Roboto', 'Times New Roman', Times, serif;
+	background-color: black;
+	padding: 0;
+	margin: 0;
+	color: black ;
+}
+body .page{
+	margin: 20px 80px;
+}
+/*Barre de navigation */
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background-color: black;
+	padding: 10px 0px;
+}
+nav .onglets{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5px;
+}
+nav .onglets a{
+	margin-right: 20px;
+	text-decoration: none;
+	color: white;
+}
+nav .buttons button{
+	padding: 13px 20px;
+	border: none;
+	font-size: 15px;
+	cursor: pointer;
+	outline: none;
+}
+nav .buttons .login{
+	background-color: inherit;
+	margin-right: 10px;
+	color: darkgrey;
+}
+nav .buttons .register{
+	background-color: red;
+	margin-right: 10px;
+	color:white;
+}
+/*fin de la barre de navigation */
+
+/*header*/
+header{
+	margin-top: 40px;
+	background: url('https://officialpsds.com/imageview/rn/62/rn6205_large.png?1521316483');
+	background-repeat: no-repeat;
+	background-size: 350px 350px;
+	background-position: center;
+}
+header h1{
+	text-align: center;
+	font-size: 60px;
+	padding: 150px;
+	transition: transform 2.5s;
+	color: white;
+}
+/*fin du header*/
+
+/*pied de page*/
+footer{
+	background-color: #1a1a1a;
+	padding: 25px 100px;
+	color: #828282;
+}
+footer .colonnes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*fin de pied de page*/
+@media screen and (max-width: 600px){
+	body.page{
+		margin: 10px;
+	}
+	nav .onglets{
+		display: none;
+	}
+	header{
+		margin-top: 20px;
+		background-size: 250px 250px;
+	}
+	header h1{
+		font-size: 25px;
+		padding: 70px;
+	}
+}
